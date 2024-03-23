@@ -287,6 +287,59 @@ a {
     margin-left: 10px;
 }
 
+#medicin_cart_section {
+    margin: 50px 0;
+}
+#medicin_cart_section .medicin_gallery_box {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #b9b9b9;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+.medicin_gallery_box {
+    padding-top: 15px;
+}
+.medicin_gallery_box img {
+    width: 250px;
+    height: 100%;
+}
+.medicin_gallery_box a{
+    text-decoration: none;
+}
+.product_name {
+    margin-top: 10px;
+    background-color: #006A9B;
+    padding: 5px 0;
+}
+.product_name h6 {
+    font-size: 22px;
+    max-width: 275px;
+    color: #ffffff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+.product_name .fa-angle-right {
+    margin-left: 10px;
+    color: #ffffff;
+}
+.product_details {
+    background-color: #E5F0F5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.product_details p {
+    font-size: 14px;
+    padding: 7px 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 23px;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     #navbar .left_items {
         display: none;
@@ -322,5 +375,13 @@ a {
     #hero_section img {
         aspect-ratio: 1;
         height: 300px;
+    }
+
+    .product_name h6 {
+        font-size: 20px;
+        max-width: 245px;
+    }
+    .product_details p {
+        -webkit-line-clamp: 3;
     }
 }
