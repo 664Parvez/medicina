@@ -308,7 +308,11 @@ a {
         display: block;
     }
 
+    #hero_section {
+        margin: 20px 0;
+    }
     #hero_section h1 {
         margin-top: 20px;
+        font-size: 25px;
     }
 }
