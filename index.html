@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Bootstrap CSS, JS -->
+    <link href="./public/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="./public/css/fontawesome/css/all.min.css"/>
+    <!-- Font Awesome CDN -->
+
     <link rel="stylesheet" href="./style.css">
 
-    <!-- Font Awesome CDN -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <link rel="stylesheet" href="./public/css/fontawesome/css/all.min.css">
-    <!-- Font Awesome CDN -->
-
-    <!-- Bootstrap CSS, JS -->
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./public/js/bootstrap.bundle.min.js" ></script>
     <!-- Bootstrap CSS, JS -->
 
     <title>Medicina</title>
@@ -24,7 +24,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-4 text-start logo">
-                    <img src="./public/image/logo.webp" alt="">
+                    <img class="desktop_logo" src="./public/image/logo.webp" alt="">
+                    <img class="mobile_logo" src="./public/image/logo_mobile.webp" alt="">
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="d-flex">
@@ -59,7 +60,7 @@
                                 </ul>
                             </li>
                             <li class="nav_main_item">
-                                Womens Health <i class="fa-solid fa-caret-down"></i>
+                                Womens Health <i class="fa fa-caret-down"></i>
                                 <ul class="nav_sub_item">
                                     <li><a href=""><img class="items_icon_img" src="./public/image/Weight-Loss_1699700112_1711036978.webp" alt=""> Weight Loss</a></li>
                                 </ul>
@@ -124,10 +125,11 @@
     <section id="hero_section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <img src="./public/image/Erectile-Dysfunct.webp" alt="">
+                <div class="col-lg-4">
+                    <img class="desktop_hero_img" src="./public/image/Erectile-Dysfunct.webp" alt="">
+                    <img class="mobile_hero_img" src="./public/image/Erectile-Dysfunction.webp" alt="">
                 </div>
-                <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="col-lg-8">
                     <h1>Erectile Dysfunction Treatment</h1>
                     <h4>Discover safe and effective therapies for managing erectile dysfunction.</h4>
                     <a href="" class="btn my-3 btn-lg">Start Consultation <i class="fa-solid fa-chevron-right"></i></a>
@@ -145,7 +147,8 @@
                     <div class="medicin_gallery_box mt-4">
                         <a href="">                    
                             <div class="text-center">
-                                <img src="./public/image/medicin1.webp" alt="">
+                                <img class="desktop_medicin" src="./public/image/medicin1.webp" alt="">
+                                <img class="mobile_medicin" src="./public/image/100.webp" alt="">
                             </div>
 
                             <div class="px-3 product_name">
@@ -173,7 +176,8 @@
                     <div class="medicin_gallery_box mt-4">
                         <a href="">                    
                             <div class="text-center">
-                                <img src="./public/image/medicin2.webp" alt="">
+                                <img class="desktop_medicin" src="./public/image/medicin2.webp" alt="">
+                                <img class="mobile_medicin" src="./public/image/2.5.webp" alt="">
                             </div>
 
                             <div class="px-3 product_name">
@@ -201,7 +205,8 @@
                     <div class="medicin_gallery_box mt-4">
                         <a href="">                    
                             <div class="text-center">
-                                <img src="./public/image/medicin3.webp" alt="">
+                                <img class="desktop_medicin" src="./public/image/medicin3.webp" alt="">
+                                <img class="mobile_medicin" src="./public/image/5.webp" alt="">
                             </div>
 
                             <div class="px-3 product_name">
@@ -229,7 +234,8 @@
                     <div class="medicin_gallery_box mt-4">
                         <a href="">                    
                             <div class="text-center">
-                                <img src="./public/image/medicin4.webp" alt="">
+                                <img class="desktop_medicin" src="./public/image/medicin4.webp" alt="">
+                                <img class="mobile_medicin" src="./public/image/10.webp" alt="">
                             </div>
 
                             <div class="px-3 product_name">
@@ -257,7 +263,8 @@
                     <div class="medicin_gallery_box mt-4">
                         <a href="">                    
                             <div class="text-center">
-                                <img src="./public/image/medicin5.webp" alt="">
+                                <img class="desktop_medicin" src="./public/image/medicin5.webp" alt="">
+                                <img class="mobile_medicin" src="./public/image/20.webp" alt="">
                             </div>
 
                             <div class="px-3 product_name">
@@ -285,6 +292,396 @@
         </div>
     </section>
 
+    <div id="online_consultation_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12 consultant_left">
+                    <div class="consultant_heading">
+                        <div class="flag_icon"><i class="fa-regular fa-flag"></i></div>
+                        <h3>Start Your Online Consultation</h3>
+                    </div>
+                    <p class="consultent_sub_para mb-0">Fill in our online questonnaire so our medical team can show you eligible Erectile Dysfunction treatments.</p>
+
+                    <div class="text-center py-4">
+                        <a href="" class="btn btn-lg consultant_btn">Start Consultation <i class="fa-solid fa-caret-right"></i></a>
+                    </div>
+
+                    <div class="consultation_feature">
+                        <div class="d-flex justify-content-between align-content-center" id="four_features">
+                            <div class="list_content">
+                                <span>
+                                    <img src="./public/image/Choose-Your-Treatment.webp" alt="">
+                                </span>
+                                <p class="mb-0">Choose Your Treatments</p>
+                            </div>
+                            <div class="list_content">
+                                <span>
+                                    <img src="./public/image/Online-Consultation-01.webp" alt="">
+                                </span>
+                                <p class="mb-0">Online Consultation</p>
+                            </div>
+                            <div class="list_content">
+                                <span>
+                                    <img src="./public/image/Place-your-order.webp" alt="">
+                                </span>
+                                <p class="mb-0">Place Your Order</p>
+                            </div>
+                            <div class="list_content">
+                                <span>
+                                    <img src="./public/image/Online-support.webp" alt="">
+                                </span>
+                                <p class="mb-0">Ongoing Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 consultant_right">
+                    <div class="doctor_all_content">
+                        <div class="doctor_info">
+                            <div class="doctor_info_icon">
+                                <i class="fa-solid fa-prescription-bottle-medical"></i>
+                            </div>
+                            <div>
+                                <h4>Mr. Abdus Subhan</h4>
+                                <p class="mb-1">SuperIndependent Pharmacist</p>
+                                <p class="mb-1">GPhC Reg 2070837</p>
+                            </div>
+                        </div>
+                        <div class="doctor_info">
+                            <div class="doctor_info_icon">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <div>
+                                <h4>Mr. Saleh Ahmed</h4>
+                                <p class="mb-1">Independent Prescriber & Advance Practitioner</p>
+                                <p class="mb-1">GPhC Reg 2065382</p>
+                            </div>
+                        </div>
+                        <div class="doctor_info">
+                            <div class="doctor_info_icon">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <div>
+                                <h4>Mr. Mohammed Shajan Ali</h4>
+                                <p class="mb-1">Independent Prescriber</p>
+                                <p class="mb-1">GPhC Reg 2067785</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="subscribe_section">
+        <div class="container">
+            <div class="row subscribe align-items-center">
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <ul>
+                        <li class="footer_social"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="footer_social"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="d-flex">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="subscribe_btn btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer_main_section">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="./public/image/logo_white.webp" alt="">
+                    </div>
+                    <div class="col-lg-3">
+                        <h3>Learn More</h3>
+                        <hr>
+                        <ul>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Return Policy</a></li>
+                            <li><a href="">Cookie Policy</a></li>
+                            <li><a href="">Our Branches</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3>Information</h3>
+                        <hr>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="d-flex">
+                                        <div>
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="footer_information">
+                                            Superintendent Pharmacist ABDUS SUBHAN (2070837)
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="d-flex">
+                                    <div>
+                                        <i class="fa-solid fa-building"></i>
+                                    </div>
+                                    <div class="footer_information">
+                                        Company Registration: 08402763
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="d-flex">
+                                        <div>
+                                            <i class="fa-solid fa-house"></i>
+                                        </div>
+                                        <div class="footer_information">
+                                            Premises GPHC No 9011553
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="d-flex">
+                                        <div>
+                                            <i class="fa-solid fa-circle-user"></i>
+                                        </div>
+                                        <div class="footer_information">
+                                            Barakah Healthcare Limited
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="d-flex">
+                                        <div>
+                                            <i class="fa-solid fa-list-ol"></i>
+                                        </div>
+                                        <div class="footer_information">
+                                            Complaints
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3>Contact Us</h3>
+                        <hr>
+                        <ul class="footer_contact_items">
+                            <li><a href="">01604345869</a></li>
+                            <li><a href="">info@medicinapharmacy.co.uk</a></li>
+                            <li><a href="">Unit 3, 11 Upper priory street, Northampton, NN1 2PT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="payment_getway_logo">
+                    <div>
+                        <h5><i class="fa-solid fa-lock"></i> Pay Securely with</h5>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><img src="./public/image/mastercard.webp" alt=""></li>
+                            <li><img src="./public/image/visa.webp" alt=""></li>
+                            <li><img src="./public/image/paypal.webp" alt=""></li>
+                            <li><img src="./public/image/Amex.webp" alt=""></li>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="responsive_footer_items mt-5">
+                <div class="text-center">
+                    <img src="./public/image/logo.webp" alt="">
+                </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Popular Treatments
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="responsive_treatment">
+                                        <div class="row text-center">
+                                            <div class="col-6">
+                                                <div class="treatment_item">
+                                                    <a href="">Erectile Dysfunction</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="treatment_item">
+                                                    <a href="">Weight Loss</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="treatment_item">
+                                                    <a href="">Acid Reflux</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="treatment_item">
+                                                    <a href="">Hair Loss</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Learn More
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="responsive_learnmore">
+                                        <div class="row text-center">
+                                            <div class="col-6"><div class="learn_item"><a href="">FAQs</a></div></div>
+                                            <div class="col-6"><div class="learn_item"><a href="">Terms & Conditions</a></div></div>
+                                            <div class="col-6"><div class="learn_item"><a href="">Privacy Policy</a></div></div>
+                                            <div class="col-6"><div class="learn_item"><a href="">Return Policy</a></div></div>
+                                            <div class="col-6"><div class="learn_item"><a href="">Cookie Policy</a></div></div>
+                                            <div class="col-6"><div class="learn_item"><a href="">Our Branches</a></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Informations
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="responsive_footer_info">
+                                        <li>
+                                            <a href="">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <i class="fa-solid fa-user"></i>
+                                                    </div>
+                                                    <div class="footer_information">
+                                                        Superintendent Pharmacist ABDUS SUBHAN (2070837)
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex">
+                                                <div>
+                                                    <i class="fa-solid fa-building"></i>
+                                                </div>
+                                                <div class="footer_information">
+                                                    Company Registration: 08402763
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <i class="fa-solid fa-house"></i>
+                                                    </div>
+                                                    <div class="footer_information">
+                                                        Premises GPHC No 9011553
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <i class="fa-solid fa-circle-user"></i>
+                                                    </div>
+                                                    <div class="footer_information">
+                                                        Barakah Healthcare Limited
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <i class="fa-solid fa-list-ol"></i>
+                                                    </div>
+                                                    <div class="footer_information">
+                                                        Complaints
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Contact Us
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="responsive_footer_contact_items">
+                                        <li><i class="fa-solid fa-phone"></i> <a href="">01604345869</a></li>
+                                        <li><i class="fa-solid fa-envelope"></i> <a href="">info@medicinapharmacy.co.uk</a></li>
+                                        <li><i class="fa-solid fa-location-dot"></i> <a href="">Unit 3, 11 Upper priory street, Northampton, NN1 2PT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="copywrite">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="copywrite_main">
+                        <ul>
+                            <li><a href="">Terms and Condition</a></li>
+                            <li> | </li>
+                            <li><a href="">Regulation</a></li>
+                            <li> | </li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li> | </li>
+                            <li><a href="">Cookies Policy</a></li>
+                        </ul>
+
+                        <p class="mb-0">© Medicina Pharmacy 2024. All Rights Reserved.</p>
+                        <p class="mb-0">Company Number: <a href="" class="copywrite_phone">08402763</a></p>
+                        <p class="mb-0"><a href="" class="copywrite_address">Unit 3, 11 Upper priory street, Northampton, NN1 2PT</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="copywrite_img">
+                        <img src="./public/image/UK-Registar.webp" alt="">
+                        <p class="mb-0">&copy; Medicina Farmacy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./app.js"></script>
 

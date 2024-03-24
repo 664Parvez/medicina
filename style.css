@@ -3,10 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-body {
-    font-family: Roboto, sans-serif;
-}
 ul {
     list-style: none;
 }
@@ -17,9 +13,12 @@ a {
 #navbarTop {
     padding: 18px 0;
 }
-#navbarTop img {
+#navbarTop .desktop_logo {
     width: 85%;
     height: auto;
+}
+#navbarTop .mobile_logo {
+    display: none;
 }
 #navbarTop input {
     border-top-left-radius: 0;
@@ -272,6 +271,12 @@ a {
     width: 100%;
     border-radius: 20px;
 }
+#hero_section .desktop_hero_img {
+    display: block;
+}
+#hero_section .mobile_hero_img {
+    display: none;
+}
 #hero_section h1 {
     font-size: 35px;
     color: #006A9B;
@@ -300,12 +305,22 @@ a {
     padding-top: 15px;
 }
 .medicin_gallery_box img {
-    width: 250px;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 20px 0;
+    max-width: 80%;
+    max-height: 80%;
 }
-.medicin_gallery_box a{
-    text-decoration: none;
+.desktop_medicin {
+    display: block;
+    margin: auto;
 }
+.mobile_medicin {
+    display: none;
+}
+
+
 .product_name {
     margin-top: 10px;
     background-color: #006A9B;
@@ -340,6 +355,307 @@ a {
     line-height: 23px;
 }
 
+#online_consultation_section{
+    margin-top: 50px;
+    background-image: url("./public/image/online-consultation-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+.consultant_heading {
+    display: flex;
+    align-items: center;
+}
+.flag_icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    padding: 5px 11px;
+}
+.flag_icon i {
+    margin-left: 2px;
+    margin-top: 6px;
+    font-size: 25px;
+    color: #ffffff;
+}
+#online_consultation_section h3 {
+    color: #ffffff;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+.consultent_sub_para {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 15px;
+}
+.consultant_btn {
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.consultant_btn:hover {
+    color: #ffffff;
+}
+.consultation_feature {
+    background-color: #1A79A5;
+    padding: 25px 20px;
+    border-radius: 15px;
+}
+.list_content img {
+    width: 40px;
+    height: auto;
+}
+.list_content p {
+    font-size: 13px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+.consultant_left {
+    padding-right: 30px;
+}
+.consultant_right {
+    padding-left: 30px;
+}
+.doctor_info {
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.doctor_info_icon {
+    background: #ffffff;
+    padding-top: 15px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    left: -20px;
+    color: #00496B;
+}
+.doctor_info_icon  i{
+    font-size: 20px;
+}
+.doctor_all_content h4 {
+    font-size: 20px;
+    color: #ffffff;
+}
+.doctor_all_content p{
+    color: #ffffff;
+}
+
+#subscribe_section {
+    background-color: #66A6C3;
+    padding: 30px;
+}
+.subscribe ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-top: 8px;
+}
+.footer_social {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+.footer_social:first-child {
+    margin-left: 0;
+}
+.footer_social i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #006a9b;
+    font-size: 24px;
+}
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe input {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px;
+    border: 2px solid #00496B;
+}
+.subscribe .form-control:focus {
+    box-shadow: none;
+    border-color: #00496B;
+}
+.subscribe .btn:focus {
+    box-shadow: none;
+}
+.subscribe .btn {
+    background-color: #00496B;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff;
+}
+
+#footer {
+    padding: 50px 0;
+    background-color: #006A9B;
+}
+#footer .payment_getway_logo ul {
+    margin-bottom: 0;
+}
+#footer .payment_getway_logo ul li {
+    display: inline-block;
+}
+.payment_getway_logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.payment_getway_logo h5 {
+    color: #ffffff;
+}
+.payment_getway_logo ul li img {
+    border-radius: 5px;
+}
+.footer_main_section img {
+    width: 100%;
+}
+.footer_main_section h3 {
+    font-size: 24px;
+    color: #ffffff;
+}
+.footer_main_section hr {
+    background-color: #ffffff;
+}
+.footer_main_section ul {
+    padding-left: 0;
+}
+.footer_main_section ul li {
+    padding: 5px 0;
+    color: #ffffff;
+}
+.footer_main_section ul li a {
+    color: #ffffff;
+}
+.footer_contact_items li a {
+    font-style: italic;
+}
+.footer_information {
+    padding-left: 10px;
+}
+
+.responsive_footer_items {
+    display: none;
+}
+.responsive_footer_items img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+.responsive_footer_info {
+    padding-left: 0;
+}
+.responsive_footer_info li a {
+    color: #000000;
+    text-decoration: underline;
+}
+.responsive_footer_contact_items {
+    padding-left: 0;
+}
+.responsive_footer_contact_items li {
+    padding: 5px 0;
+}
+.responsive_footer_contact_items li a {
+    color: #000000;
+    text-decoration: underline;
+}
+.responsive_learnmore .learn_item {
+    background-color: #006A9B;
+    padding: 10px;
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.responsive_learnmore .learn_item a{
+    color: #ffffff;
+    font-size: 14px;
+}
+.treatment_item {
+    background-color: #006A9B;
+    padding: 10px;
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.treatment_item a {
+    color: #ffffff;
+    font-size: 12px;
+}
+.accordion-button{
+    background-color: #66A6C3;
+    color: #000000;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #66A6C3;
+    color: #000000;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+#copywrite {
+    padding: 10px 0;
+}
+.copywrite_img {
+    text-align: end;
+}
+.copywrite_img p{
+    display: none;
+}
+.copywrite_main ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.copywrite_main ul li {
+    display: inline-block;
+}
+.copywrite_main ul li a {
+    font-size: 14px;
+}
+.copywrite_main ul li a:hover {
+    text-decoration: underline;
+}
+.copywrite_main p {
+    font-size: 12px;
+}
+.copywrite_phone {
+    color: #000000;
+}
+.copywrite_phone:hover {
+    text-decoration: underline;
+}
+.copywrite_address {
+    color: #000000;
+}
+.copywrite_address:hover {
+    text-decoration: underline;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     #navbar .left_items {
         display: none;
@@ -347,6 +663,13 @@ a {
     #navbarTop .logo {
         text-align: center !important;
         margin-bottom: 5px;
+    }
+    #navbarTop .desktop_logo {
+        display: none;
+    }
+    #navbarTop .mobile_logo {
+        display: block;
+        margin: auto;
     }
     #navbarTop #navtop_items {
         text-align: center !important;
@@ -365,16 +688,18 @@ a {
         display: block;
     }
 
-    #hero_section {
-        margin: 20px 0;
-    }
     #hero_section h1 {
         margin-top: 20px;
-        font-size: 25px;
     }
     #hero_section img {
         aspect-ratio: 1;
-        height: 300px;
+        height: 270px;
+    }
+    #hero_section .desktop_hero_img {
+        display: none;
+    }
+    #hero_section .mobile_hero_img {
+        display: block;
     }
 
     .product_name h6 {
@@ -383,5 +708,87 @@ a {
     }
     .product_details p {
         -webkit-line-clamp: 3;
+    }
+    .desktop_medicin {
+        display: none;
+    }
+    .mobile_medicin {
+        display: block;
+        margin: auto;
+    }
+    .consultant_left {
+        padding-right: 13px;
+    }
+    .consultant_right {
+        padding-left: 13px;
+    }
+    .consultant_heading {
+        display: block;
+    }
+    #online_consultation_section h3 {
+        margin-left: 0;
+    }
+    .consultent_sub_para {
+        font-size: 16px;
+    }
+    #four_features {
+        display: block !important;
+        text-align: center;
+    }
+    #four_features p{
+        margin-bottom: 10px !important;
+    }
+    .doctor_all_content {
+        margin-top: 50px;
+    }
+    .doctor_info {
+        display: block;
+        padding: 20px 20px;
+        margin-top: 50px;
+    }
+    .doctor_info_icon {
+        top: -30px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .subscribe ul {
+        text-align: center;
+    }
+
+    .payment_getway_logo {
+        display: block;
+        text-align: center;
+    }
+    .payment_getway_logo ul {
+        padding-left: 0;
+    }
+
+    .footer_main_section {
+        display: none;
+    }
+    .payment_getway_logo {
+        margin-top: 0;
+    }
+
+    #footer{
+        background-color: #E5F0F5;
+    }
+    .payment_getway_logo h5 {
+        color: #000000;
+    }
+    .responsive_footer_items {
+        display: block;
+    }
+    .copywrite_main {
+        display: none;
+    }
+    .copywrite_img {
+        text-align: center;
+    }
+    .copywrite_img p{
+        display: block;
     }
 }
